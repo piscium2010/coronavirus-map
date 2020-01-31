@@ -1,0 +1,26 @@
+.container {
+  position: absolute;
+  top: 0;
+  height: 60vh;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.list {
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+  transform: translateY(-90px);
+}
+
+.author {
+  color: gray;
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 45px;
+}

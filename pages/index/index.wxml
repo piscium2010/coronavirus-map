@@ -1,0 +1,45 @@
+<!-- index.wxml -->
+<view class='container'>
+  <view class='overview'>
+    <view class='g'>
+      <view class="number confirm">{{overviewData.confirm}}</view>
+      <view class="text">全国确诊</view>
+    </view>
+    <view class='g'>
+      <view class="number suspect">{{overviewData.suspect}}</view>
+      <view class="text">疑似病例</view>
+    </view>
+    <view class='g'>
+      <view class="number cure">{{overviewData.heal}}</view>
+      <view class="text">治愈人数</view>
+    </view>
+    <view class='g'>
+      <view class="number dead">{{overviewData.dead}}</view>
+      <view class="text">死亡人数</view>
+    </view>
+  </view>
+  <ec-canvas id="mychart-dom-area" canvas-id="mychart-area" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class='list'>
+  <view class='desc'>
+    <view>截至：{{updateTime}}</view>
+    <view>数据来源：view.inews.qq.com</view>
+    <view class='detail'>详情</view>
+  </view>
+  <view class="table">
+    <view class="table-tr">
+      <view class="table-th">地区</view>
+      <view class="table-th">确诊</view>
+      <view class="table-th">死亡</view>
+      <view class="table-th">治愈</view>
+    </view>
+    <view class="table-tr" wx:for="{{tableData}}" wx:for-item="row" wx:key="{{row.area}}">
+      <view class="table-td">{{row.area}}</view>
+      <view class="table-td confirm">{{row.confirm}}</view>
+      <view class="table-td dead">{{row.dead}}</view>
+      <view class="table-td cure">{{row.heal}}</view>
+    </view>
+    <view class="table-tr"></view>
+  </view>
+  <view class='author'>Developed by piscium2010</view>
+</view>

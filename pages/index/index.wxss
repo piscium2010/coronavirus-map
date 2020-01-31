@@ -1,0 +1,86 @@
+/**index.wxss**/
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.desc {
+  font-size: 10px;
+  padding: 6px;
+  color: gray;
+  text-align: left;
+}
+
+.detail {
+  text-align: center;
+  padding: 18px 0 12px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.overview {
+  display: flex;
+  padding-top: 12px;
+}
+
+.g {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.number {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.confirm {
+  color: #d81d1b
+}
+
+.suspect {
+  color: #f7ab1a
+}
+
+.cure {
+  color: #178b50
+}
+
+.dead {
+  color: #66666c
+}
+
+.text {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+.table-tr {
+  display: table-row;
+  height: 92rpx;
+}
+
+.table-tr:nth-child(odd){
+  background-color: #f6f6f6;
+}
+
+
+.table-th {
+  display: table-cell;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-td {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
